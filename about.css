@@ -1,0 +1,3 @@
+body{background-color: rgb(19, 0,18);}
+p{color: brown;  font-size: 20px; word-spacing: 10px; line-height: 30px; margin: 200px 50px;}
+p::first-letter{font-size: 100px;}
