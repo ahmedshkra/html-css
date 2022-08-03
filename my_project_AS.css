@@ -1,13 +1,13 @@
-/* About
-Founded in 2000, AS-STORE has become a leading Game Studio in San Francisco, 
-serving as a home for all game enthusiasts. With a team of professional developers,
-animators, artists, engineers and so much more, we try to keep surprising our audience by producing the next best thing in the industry time and time again. At AS-STORE, customer satisfaction is our #1 goal, and we go the extra mile to make sure each and every one of our gamers has a memorable experience. 
-Check out our site and see what makes AS-STORE so special. */
 body{
     background-color:rgb(19, 0, 18);
     width: auto;
     height: auto;
-    
+    /* animation */
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-name: myanimation;
+    animation-duration: 6s;
 }
 div.content
 {
@@ -17,6 +17,7 @@ div.logo
 {
     margin-left: 20px;
     margin-top: 20px;
+    border-radius: 50%;
 }
 div.con
 {
@@ -25,6 +26,7 @@ div.con
     margin-top: 90px;
     word-spacing: 40px;
     font-size: xx-large;
+    
 }
 div.pic1
 {
@@ -43,10 +45,26 @@ a
 {
     display: inline-block;  /* one line*/
     text-decoration: none;
-    color: rgb(151, 204, 29);
+    color: rgb(201, 15, 93);
+ 
 }
 a:hover
 {
     text-decoration: underline;
     cursor: pointer;
+    border: solid rgba(13, 10, 167, 0.445) 5px ;
+    border-radius: 20%;
+    
+}
+@keyframes myanimation
+{
+    0%{
+        background-color:rgb(19, 0, 18);
+    }
+    50%{
+        background-color:rgb(141, 14, 3);
+    }
+    100%{
+        background-color:rgba(163, 79, 0, 0.384);
+    }
 }
